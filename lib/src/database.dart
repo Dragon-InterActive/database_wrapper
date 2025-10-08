@@ -23,12 +23,12 @@ class Database {
   Database._();
 
   static Future<void> initialize({
-    required DatabaseRepository prefRepository,
+    required DatabaseRepository prefsRepository,
     required DatabaseRepository secureRepository,
     required DatabaseRepository storageRepository,
   }) async {
     _instance = Database._();
-    _instance!.prefs = prefRepository;
+    _instance!.prefs = prefsRepository;
     _instance!.secure = secureRepository;
     _instance!.storage = storageRepository;
 
