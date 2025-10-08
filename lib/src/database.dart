@@ -22,7 +22,7 @@ class Database {
 
   Database._();
 
-  Future<void> initialize({
+  static Future<void> initialize({
     required DatabaseRepository prefRepository,
     required DatabaseRepository secureRepository,
     required DatabaseRepository storageRepository,
